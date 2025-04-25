@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::get('/test', function (){
     return view('test', ['variable' => "my variable text value"]);
 });
+
+Route::get('comments', array('uses' => 'CommentController@index'));
